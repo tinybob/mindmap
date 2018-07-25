@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+
+<style type="text/css">
+    
+    .node {
+      cursor: pointer;
+    }
+  
+    .overlay{
+        background-color: black; 
+    }
+     
+    .node circle {
+      fill: #fff;
+      stroke: steelblue;
+      stroke-width: 1.5px;
+    }
+     
+    /*.node text {
+      font-size:10px; 
+      font-family:sans-serif;
+    }*/
+    .nodeText {
+      font-size:10px; 
+      font-family:sans-serif;
+      cursor: default;
+    }
+    .linkText {
+      font-size: 11px;
+      font-family:sans-serif;
+      font-weight:bold;
+      fill:green;
+      cursor: pointer;
+      /*stroke:darkgreen;*/
+    }
+
+    .closedNode {
+      font-size: 11px;
+      font-family:sans-serif;
+      font-weight:bold;
+      fill:white;
+      cursor: pointer;
+    }
+
+    .link {
+      fill: none;
+      stroke: yellow;
+      stroke-width: 1.5px;
+    }
+  
+    .templink {
+      fill: none;
+      stroke: red;
+      stroke-width: 3px;
+    }
+  
+    .ghostCircle.show{
+        display:block;
+    }
+  
+    .ghostCircle, .activeDrag .ghostCircle{
+         display: none;
+    }
+  
+    .node rect {
+        fill: none;
+        stroke: yellow;
+        stroke-width: 1.5px;
+    }
+
+    div.tooltip {   
+        position: absolute;           
+        text-align: center;           
+        width: 60px;                  
+        height: 28px;                 
+        padding: 2px;             
+        font: 12px sans-serif;        
+        border: 0px;      
+        border-radius: 8px;           
+        pointer-events: none;         
+    }
+    /* path {
+  fill: #ccc;
+  stroke: #333;
+  stroke-width: 1.5px;
+  transition: fill 250ms linear;
+  transition-delay: 150ms;
+    }
+
+    path:hover {
+    fill: #999;
+    stroke: #000;
+    transition-delay: 0;
+    } */
+</style>
+
+<body>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="mindmap.js"></script>
+<!-- <script src="padChart.js"></script> -->
+
+<div id="map_container"></div>
+</body>

@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>无标题文档</title>
+
+<meta name="Description" content="说明" />
+
+<meta name="Keywords" content="关键词" />
+
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+</head>
+
+<style type="text/css">
+
+body,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,dd{margin:0px;padding:0px;}
+
+body{font:12px "宋体","微软雅黑" ;line-height: 22px;}
+
+li{list-style-type:none;}
+
+img,input{border:0px;}
+
+.fl{float:left;}
+
+.fr{float:right;}
+
+
+
+/* 清除浮动*/
+
+.clr:after{  
+
+    content:"";  
+
+    height:0px;  
+
+    visibility:hidden;  
+
+    display:block;  
+
+    clear:both;  
+
+}    
+
+.clr{  
+
+    zoom:1;  
+
+} 
+
+.slide_x{
+
+	width:10000px;
+
+	height:280px;
+
+	position: relative;
+
+	
+
+}
+
+.slide_x .box{position:relative;width:600px;height:280px;overflow: hidden;margin-left: 400px;}
+
+.slide_x .list{width:9999px;}
+
+.slide_x .list li{float:left;width:600px;position: relative;}
+.box1{
+    width:"600"; height:"280";
+}
+</style>
+
+<script type="text/javascript" src="scroll.js"></script>
+
+<body>
+
+	<div id="slide_x" class="slide_x">
+
+		<div class="box">
+
+			<ul class="list clr">
+
+				<li><div class="box1" style="background-color: green">1</div></li>
+
+				<li><div class="box1" style="background-color: red">2</div></li>
+
+				<li><div class="box1" style="background-color: blue">3</div></li>
+
+			</ul>
+
+		</div>
+
+	</div>
+	<button id="prevs">prevs</button>
+	<button id="prev">prev</button>
+	<button id="next">next</button>
+</body>
+
+</html>
